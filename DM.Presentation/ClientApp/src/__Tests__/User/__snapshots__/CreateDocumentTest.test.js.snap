@@ -1,0 +1,351 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateDocumentFunctionalitiesTest CreateDocument matches snapshot 1`] = `
+Array [
+  <header
+    className="MuiPaper-root MuiAppBar-root MuiAppBar-positionAbsolute MuiAppBar-colorDefault withI18nextTranslation(CreateDocument)-appBar-1 MuiPaper-elevation4"
+  >
+    <div
+      className="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+    >
+      <h6
+        className="MuiTypography-root MuiTypography-h6 MuiTypography-colorInherit MuiTypography-noWrap"
+      >
+        createdocument_companyname
+      </h6>
+    </div>
+  </header>,
+  <main
+    className="withI18nextTranslation(CreateDocument)-layout-2"
+  >
+    <div
+      className="MuiPaper-root withI18nextTranslation(CreateDocument)-paper-3 MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <h1
+        className="MuiTypography-root withI18nextTranslation(CreateDocument)-label-4 MuiTypography-h4 MuiTypography-alignCenter"
+      >
+        createdocument_adddoc
+      </h1>
+      <div
+        className="withI18nextTranslation(CreateDocument)-margin-7"
+        id="doc-form-container"
+      >
+        <div
+          aria-expanded={false}
+          aria-owns={null}
+          className="MuiAutocomplete-root MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          role="combobox"
+          style={
+            Object {
+              "width": 300,
+            }
+          }
+        >
+          <div
+            className="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+          >
+            <label
+              className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+              data-shrink={false}
+              htmlFor="combo-box-metadata-model"
+              id="combo-box-metadata-model-label"
+            >
+              createdocument_meatdatmodel
+            </label>
+            <div
+              className="MuiInputBase-root MuiOutlinedInput-root MuiAutocomplete-inputRoot MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
+              onClick={[Function]}
+            >
+              <input
+                aria-activedescendant={null}
+                aria-autocomplete="list"
+                aria-controls={null}
+                aria-invalid={false}
+                autoCapitalize="none"
+                autoComplete="off"
+                autoFocus={false}
+                className="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+                disabled={false}
+                id="combo-box-metadata-model"
+                onAnimationStart={[Function]}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onMouseDown={[Function]}
+                required={false}
+                spellCheck="false"
+                type="text"
+                value=""
+              />
+              <div
+                className="MuiAutocomplete-endAdornment"
+              >
+                <button
+                  aria-label="Clear"
+                  className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator MuiAutocomplete-clearIndicatorDirty"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onDragLeave={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  tabIndex={-1}
+                  title="Clear"
+                  type="button"
+                >
+                  <span
+                    className="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <button
+                  aria-label="Open"
+                  className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-popupIndicator"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onDragLeave={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchMove={[Function]}
+                  onTouchStart={[Function]}
+                  tabIndex={-1}
+                  title="Open"
+                  type="button"
+                >
+                  <span
+                    className="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="MuiSvgIcon-root"
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M7 10l5 5 5-5z"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <fieldset
+                aria-hidden={true}
+                className="PrivateNotchedOutline-root-191 MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  className="PrivateNotchedOutline-legendLabelled-193"
+                >
+                  <span>
+                    createdocument_meatdatmodel
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "padding": "10px 10px",
+            }
+          }
+        >
+          <div
+            className="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense MuiFormControl-fullWidth"
+          >
+            <label
+              className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense Mui-disabled Mui-disabled Mui-required Mui-required"
+              data-shrink={false}
+              htmlFor="doc-version-msg"
+              id="doc-version-msg-label"
+            >
+              createdocument_docversionmessagelabel
+              <span
+                className="MuiFormLabel-asterisk MuiInputLabel-asterisk"
+              >
+                 
+                *
+              </span>
+            </label>
+            <div
+              className="MuiInputBase-root MuiInput-root MuiInput-underline Mui-disabled Mui-disabled MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-marginDense MuiInput-marginDense"
+              onClick={[Function]}
+            >
+              <input
+                aria-invalid={false}
+                autoFocus={false}
+                className="MuiInputBase-input MuiInput-input Mui-disabled Mui-disabled MuiInputBase-inputMarginDense MuiInput-inputMarginDense"
+                disabled={true}
+                id="doc-version-msg"
+                onAnimationStart={[Function]}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                required={true}
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "padding": "20px 5px",
+            }
+          }
+        >
+          <input
+            accept="image/*"
+            id="upload-scanned-doc-input"
+            multiple={true}
+            onChange={[Function]}
+            required={true}
+            style={
+              Object {
+                "display": "none",
+              }
+            }
+            type="file"
+          />
+          <div
+            className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              className="MuiCardContent-root"
+            >
+              <h2
+                className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom MuiTypography-alignLeft"
+              >
+                previewdoc_scanneddoc
+              </h2>
+            </div>
+            <div
+              className="MuiCardActions-root withI18nextTranslation(ScannedDocumentSelector)-buttonUploadScannedDoc-223 MuiCardActions-spacing"
+            >
+              <button
+                className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall"
+                disabled={false}
+                id="uploadScannedDoc"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  previewdoc_uploadacopy
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div />
+        <div />
+        <hr
+          className="MuiDivider-root MuiDivider-middle"
+        />
+        <div>
+          <div />
+          <div />
+        </div>
+        <hr
+          className="MuiDivider-root MuiDivider-middle"
+        />
+        <div
+          style={
+            Object {
+              "margin": "inherit",
+              "padding": "inherit",
+            }
+          }
+        >
+          <div />
+        </div>
+        <div
+          className="withI18nextTranslation(CreateDocument)-buttons-9"
+        >
+          <button
+            className="MuiButtonBase-root MuiButton-root MuiButton-contained withI18nextTranslation(CreateDocument)-buttonForm-10 MuiButton-containedPrimary"
+            disabled={false}
+            form="fill-metadata-form"
+            onBlur={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="submit"
+          >
+            <span
+              className="MuiButton-label"
+            >
+              button_submit
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <p
+      className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-alignCenter"
+    >
+      Copyright © 
+      <a
+        color="inherit"
+        href="/https://material-ui.com/"
+        onClick={[Function]}
+      >
+        link
+      </a>
+       
+      2020
+      .
+    </p>
+  </main>,
+]
+`;

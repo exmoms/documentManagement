@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScannedDocumentSelector ScannedDocumentSelector matches snapshot 1`] = `
+<div
+  style={
+    Object {
+      "padding": "20px 5px",
+    }
+  }
+>
+  <input
+    accept="image/*"
+    id="upload-scanned-doc-input"
+    multiple={true}
+    onChange={[Function]}
+    required={true}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="file"
+  />
+  <div
+    className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded"
+  >
+    <div
+      className="MuiCardContent-root"
+    >
+      <h2
+        className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom MuiTypography-alignLeft"
+      >
+        previewdoc_scanneddoc
+      </h2>
+    </div>
+    <div
+      className="MuiCardActions-root withI18nextTranslation(ScannedDocumentSelector)-buttonUploadScannedDoc-15 MuiCardActions-spacing"
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall"
+        disabled={false}
+        id="uploadScannedDoc"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          previewdoc_uploadacopy
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

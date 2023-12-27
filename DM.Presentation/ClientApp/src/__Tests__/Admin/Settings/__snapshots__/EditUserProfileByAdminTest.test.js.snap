@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditUserProfileByAdmin matches snapshot 1`] = `
+<WithStyles(ForwardRef(Container))
+  component="main"
+  maxWidth="xs"
+>
+  <WithStyles(CssBaseline) />
+  <div
+    className="makeStyles-paper-1"
+  >
+    <WithStyles(ForwardRef(Grid))
+      container={true}
+      spacing={1}
+    >
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+        xs={12}
+      >
+        <WithStyles(ForwardRef(TextField))
+          autoComplete="email"
+          fullWidth={true}
+          id="edit-profile-by-admin-email"
+          label="email"
+          name="edit-profile-by-admin-email"
+          onChange={[Function]}
+          required={true}
+          type="email"
+          value=""
+          variant="outlined"
+        />
+      </WithStyles(ForwardRef(Grid))>
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+        xs={12}
+      >
+        <WithStyles(ForwardRef(TextField))
+          autoComplete="tel"
+          fullWidth={true}
+          id="edit-profile-by-admin-tel"
+          label="phone_number"
+          name="edit-profile-by-admin-tel"
+          onChange={[Function]}
+          type="tel"
+          value=""
+          variant="outlined"
+        />
+      </WithStyles(ForwardRef(Grid))>
+      <WithStyles(ForwardRef(FormControl))
+        className="makeStyles-margin-4 makeStyles-textField-5"
+        variant="outlined"
+      >
+        <WithStyles(ForwardRef(InputLabel))
+          error={true}
+          htmlFor="edit-profile-by-admin-outlined-adornment-password"
+        >
+          new_password
+        </WithStyles(ForwardRef(InputLabel))>
+        <WithStyles(ForwardRef(OutlinedInput))
+          endAdornment={
+            <ForwardRef(WithStyles)
+              position="end"
+            >
+              <ForwardRef(WithStyles)
+                aria-label="toggle password visibility"
+                edge="end"
+                id="iconButton"
+                onClick={[Function]}
+                onMouseDown={[Function]}
+              >
+                <UNDEFINED />
+              </ForwardRef(WithStyles)>
+            </ForwardRef(WithStyles)>
+          }
+          error={true}
+          id="edit-profile-by-admin-outlined-adornment-password"
+          labelWidth={120}
+          onChange={[Function]}
+          type="password"
+          value=""
+        />
+        <WithStyles(ForwardRef(FormHelperText))
+          error={true}
+          id="edit-profile-by-admin-outlined-adornment-password-helper-text"
+        >
+          newPasswordErrors
+        </WithStyles(ForwardRef(FormHelperText))>
+      </WithStyles(ForwardRef(FormControl))>
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+        xs={12}
+      >
+        <WithStyles(ForwardRef(TextField))
+          autoComplete="current-password"
+          error={true}
+          fullWidth={true}
+          helperText="confirmErrors"
+          id="edit-profile-by-admin-confirmPassword"
+          label="confirmNewPassword_label"
+          name="edit-profile-by-admin-confirmPassword"
+          type="password"
+          variant="outlined"
+        />
+      </WithStyles(ForwardRef(Grid))>
+    </WithStyles(ForwardRef(Grid))>
+  </div>
+</WithStyles(ForwardRef(Container))>
+`;

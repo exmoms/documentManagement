@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableBodyToolbar matches snapshot 1`] = `
+<TableBodyToolbar
+  actions={
+    Array [
+      Object {
+        "position": "toolbarOnSelect",
+      },
+    ]
+  }
+  classes={
+    Object {
+      "actions": "TableBodyToolbar-actions-4",
+      "highlight": "TableBodyToolbar-highlight-2",
+      "root": "TableBodyToolbar-root-1",
+      "searchField": "TableBodyToolbar-searchField-6 searchField",
+      "spacer": "TableBodyToolbar-spacer-3",
+      "title": "TableBodyToolbar-title-5",
+    }
+  }
+  columns={
+    Array [
+      Object {
+        "export": true,
+        "field": true,
+        "hidden": true,
+        "title": "title",
+      },
+    ]
+  }
+  columnsButton={true}
+  components={
+    Object {
+      "Actions": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+    }
+  }
+  data={
+    Array [
+      Object {
+        "data": "Data A",
+        "id": 1,
+      },
+      Object {
+        "data": "Data B",
+        "id": 2,
+      },
+    ]
+  }
+  exportAllData={true}
+  exportButton={true}
+  exportCsv={[MockFunction]}
+  exportDelimiter="exportDelimiter"
+  exportFileName="exportFileName"
+  getFieldValue={[MockFunction]}
+  icons={
+    Object {
+      "Add": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+      "Check": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+      "Clear": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+      "Delete": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+      "DetailPanel": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+      "Edit": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+      "Export": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+      "Filter": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+      "FirstPage": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+      "LastPage": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+      "NextPage": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+      "PreviousPage": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+      "ResetSearch": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+      "Search": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+      "SortArrow": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+      "ThirdStateCheck": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+      "ViewColumn": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      },
+    }
+  }
+  localization={
+    Object {
+      "addRemoveColumns": "Add or remove columns",
+      "exportAriaLabel": "Export",
+      "exportName": "Export as CSV",
+      "exportTitle": "Export",
+      "nRowsSelected": "3",
+      "searchPlaceholder": "Search",
+      "searchTooltip": "Search",
+      "showColumnsAriaLabel": "Show Columns",
+      "showColumnsTitle": "Show Columns",
+    }
+  }
+  onColumnsChanged={[MockFunction]}
+  onSearchChanged={[MockFunction]}
+  renderData={
+    Array [
+      Object {
+        "data": "renderData A",
+        "id": 1,
+      },
+      Object {
+        "data": "renderData B",
+        "id": 2,
+      },
+    ]
+  }
+  search={true}
+  searchFieldAlignment="left"
+  searchFieldStyle={Object {}}
+  searchText="searchText"
+  selectedRows={
+    Array [
+      Object {
+        "data": "Data ",
+        "id": 1,
+      },
+      Object {
+        "data": "Data ",
+        "id": 2,
+      },
+    ]
+  }
+  showTextRowsSelected={true}
+  showTitle={false}
+  title="ExportedTitle"
+  toolbarButtonAlignment="left"
+/>
+`;

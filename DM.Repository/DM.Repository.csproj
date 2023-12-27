@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200220125450_init.cs" />
+    <Compile Remove="Migrations\20200220125450_init.Designer.cs" />
+    <Compile Remove="Migrations\20200223093058_init.cs" />
+    <Compile Remove="Migrations\20200223093058_init.Designer.cs" />
+    <Compile Remove="Migrations\20200223093144_seedDataTypes.cs" />
+    <Compile Remove="Migrations\20200223093144_seedDataTypes.Designer.cs" />
+    <Compile Remove="Migrations\20200223093210_seedUsers.cs" />
+    <Compile Remove="Migrations\20200223093210_seedUsers.Designer.cs" />
+    <Compile Remove="Migrations\20200223122533_redefineTheCompoundModelRelationship.cs" />
+    <Compile Remove="Migrations\20200223122533_redefineTheCompoundModelRelationship.Designer.cs" />
+    <Compile Remove="Migrations\20200223122558_seedUsers.cs" />
+    <Compile Remove="Migrations\20200223122558_seedUsers.Designer.cs" />
+    <Compile Remove="Migrations\20200224123307_seedRoles.cs" />
+    <Compile Remove="Migrations\20200224123307_seedRoles.Designer.cs" />
+    <Compile Remove="Migrations\20200224123500_seedRoles.cs" />
+    <Compile Remove="Migrations\20200224123500_seedRoles.Designer.cs" />
+    <Compile Remove="Migrations\20200225071441_AddRelationFK_CompoundModel_Attachments,DefaultValueForAddedDate.cs" />
+    <Compile Remove="Migrations\20200225071441_AddRelationFK_CompoundModel_Attachments,DefaultValueForAddedDate.Designer.cs" />
+    <Compile Remove="Migrations\20200225081757_changeDateFunction.cs" />
+    <Compile Remove="Migrations\20200225081757_changeDateFunction.Designer.cs" />
+    <Compile Remove="Migrations\20200225102927_changeDateFunction.cs" />
+    <Compile Remove="Migrations\20200225102927_changeDateFunction.Designer.cs" />
+    <Compile Remove="Migrations\20200225103742_seedRoles.cs" />
+    <Compile Remove="Migrations\20200225103742_seedRoles.Designer.cs" />
+    <Compile Remove="Migrations\20200225104045_fixColumnsNames.cs" />
+    <Compile Remove="Migrations\20200225104045_fixColumnsNames.Designer.cs" />
+    <Compile Remove="Migrations\20200225104205_fixColumnsNames.cs" />
+    <Compile Remove="Migrations\20200225104205_fixColumnsNames.Designer.cs" />
+    <Compile Remove="Migrations\20200225111745_changeDateFunctionAndFixColumnsNames.cs" />
+    <Compile Remove="Migrations\20200225111745_changeDateFunctionAndFixColumnsNames.Designer.cs" />
+    <Compile Remove="Migrations\20200225111924_changeDateFunctionAndFixColumnsNames.cs" />
+    <Compile Remove="Migrations\20200225111924_changeDateFunctionAndFixColumnsNames.Designer.cs" />
+    <Compile Remove="Migrations\20200225113011_seedRoles.cs" />
+    <Compile Remove="Migrations\20200225113011_seedRoles.Designer.cs" />
+    <Compile Remove="Migrations\20200226135219_migrate1.cs" />
+    <Compile Remove="Migrations\20200226135219_migrate1.Designer.cs" />
+    <Compile Remove="Migrations\20200305084017_nullValueConstraintsAndRemoveBaseEntity_ErrorViewModel.cs" />
+    <Compile Remove="Migrations\20200305084017_nullValueConstraintsAndRemoveBaseEntity_ErrorViewModel.Designer.cs" />
+    <Compile Remove="Migrations\20200308153218_20200308_AddDocumentScanEntity.cs" />
+    <Compile Remove="Migrations\20200308153218_20200308_AddDocumentScanEntity.Designer.cs" />
+    <Compile Remove="Migrations\20200315115038_Versioning_documentScan.cs" />
+    <Compile Remove="Migrations\20200315115038_Versioning_documentScan.Designer.cs" />
+    <Compile Remove="Migrations\20200422111448_add language to user.cs" />
+    <Compile Remove="Migrations\20200422111448_add language to user.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.6.2" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DM.Domain\DM.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

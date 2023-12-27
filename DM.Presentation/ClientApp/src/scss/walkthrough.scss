@@ -1,0 +1,23 @@
+@import "variables";
+
+.walkthrough-wrapper, .walkthrough__text-overlay {
+    position: fixed;
+    z-index: 20000;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+.walkthrough-wrapper {
+    display: none;
+
+    &__active {
+        display: block;
+    }
+}
+
+@import "highlights";
+@import "popover";
+@import "text-modal";
+@import "player";

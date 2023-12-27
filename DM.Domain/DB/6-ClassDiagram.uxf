@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>238</y>
+      <w>105</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>*DocumentClass*
+--
+ID
+DocumentClassName
+AddedDate
+ModifiedDate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>567</x>
+      <y>287</y>
+      <w>154</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>*MetaDataModel*
+-
+ID
+MetaDataModelName
+DocumentClassId
+AddedDate
+ModifiedDate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1036</x>
+      <y>63</y>
+      <w>147</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>*Model Attribute*
+-
+MetaDataAttributeId
+MetaDataModelId
+AddedDate
+ModifiedDate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1050</x>
+      <y>315</y>
+      <w>112</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>*MetaDataAttribute*
+-
+ID
+MetaDataAttributeName
+DataTypeID
+AddedDate
+ModifedDate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1358</x>
+      <y>308</y>
+      <w>70</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>*DataType*
+-
+ID
+DataTypeName
+AddedDate
+ModifiedDate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1330</x>
+      <y>539</y>
+      <w>98</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>*StringValue*
+-
+MetaDataAttributeId
+DocumentVersionId
+AddedDate
+ModifiedDate
+Value</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1099</x>
+      <y>700</y>
+      <w>98</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>*NumberValue*
+-
+MetaDataAttributeId
+DocumentVersionId
+AddedDate
+ModifiedDate
+Value</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>602</x>
+      <y>546</y>
+      <w>98</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>*Document*
+-
+ID
+MetaDataModelId
+AddedDate
+DocumentBarcode
+DocumentLocation
+ModifiedDate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>189</x>
+      <y>616</y>
+      <w>70</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>*DocumentSet*
+-
+ID
+AddedDate
+ModifiedDate
+Name</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>175</x>
+      <y>476</y>
+      <w>126</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>*DocumentSet Document*
+-
+DocumentId
+DocumentSetId
+AddedDate
+ModifiedDate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>602</x>
+      <y>728</y>
+      <w>98</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>*DocumentVersion*
+-
+ID
+AddedDate
+ModifiedDate
+VersionMessage
+UpdatedAt
+DocumentId</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>133</x>
+      <y>721</y>
+      <w>161</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>*AggregateDocument Document*
+-
+DocumentId
+AggregateDocumentId
+AddedDate
+ModifiedDate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>714</x>
+      <y>70</y>
+      <w>336</w>
+      <h>231</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n</panel_attributes>
+    <additional_attributes>10.0;310.0;460.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1099</x>
+      <y>126</y>
+      <w>63</w>
+      <h>203</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n</panel_attributes>
+    <additional_attributes>70.0;270.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1155</x>
+      <y>315</y>
+      <w>217</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>10.0;20.0;290.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>658</x>
+      <y>364</y>
+      <w>21</w>
+      <h>196</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>10.0;260.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>448</x>
+      <y>238</y>
+      <w>133</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>294</x>
+      <y>476</y>
+      <w>322</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;440.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>217</x>
+      <y>539</y>
+      <w>21</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>637</x>
+      <y>630</y>
+      <w>21</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>287</x>
+      <y>721</y>
+      <w>329</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;450.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>287</x>
+      <y>756</y>
+      <w>329</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>450.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1155</x>
+      <y>378</y>
+      <w>189</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+</panel_attributes>
+    <additional_attributes>250.0;230.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1120</x>
+      <y>385</y>
+      <w>42</w>
+      <h>329</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+</panel_attributes>
+    <additional_attributes>20.0;450.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>693</x>
+      <y>728</y>
+      <w>420</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+</panel_attributes>
+    <additional_attributes>580.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>693</x>
+      <y>546</y>
+      <w>651</w>
+      <h>196</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+</panel_attributes>
+    <additional_attributes>910.0;10.0;10.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>553</x>
+      <y>42</y>
+      <w>203</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>*AggregateMetaDataModel MetaDataModel*
+-
+MetaDataModelId
+AggregateMetaDataModelId
+AddedDate
+ModifiedDate
+ID
+AggregateName</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>651</x>
+      <y>126</y>
+      <w>21</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>10.0;230.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>98</x>
+      <y>112</y>
+      <w>175</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=red
+Add/Update no constraints
+	Delete: you have two options 
+				-manually delete relevant
+				 MetaDataModel record.
+				-delete directly if there 
+				 is no related record in MetaDataModel.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>77</x>
+      <y>266</y>
+      <w>189</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=red
+Add/Update: first select a document class.
+	delete: two options:
+				-if not linked with any
+				 document then delete with
+				 all relevant attributes.
+				-if linked with a document
+				 then manually delete all relevant.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>266</x>
+      <y>147</y>
+      <w>105</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>259</x>
+      <y>315</y>
+      <w>322</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;440.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1344</x>
+      <y>196</y>
+      <w>126</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=red
+-Add/Update: no constraints.
+-Delete: must not be related
+ to any MetaDataAttribute.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1379</x>
+      <y>245</y>
+      <w>21</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1358</x>
+      <y>392</y>
+      <w>126</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=red
+-Add: first select DataType.
+-Update: no permission to
+ update DataType.
+-Delete: no permission to
+ delete DataType.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1155</x>
+      <y>357</y>
+      <w>217</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;290.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1274</x>
+      <y>56</y>
+      <w>182</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=red
+-Add attribute to MetaDataModel: make
+ sure this attribute is not already added.
+-Delete attribute from MetaDataModel:
+ no constraints.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1176</x>
+      <y>77</y>
+      <w>112</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>301</x>
+      <y>21</y>
+      <w>182</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=red
+-Add: select MetaDataModel
+-Update: cannot update MetaDataModel.
+-Delete: cannot delete MetaDataModel.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>476</x>
+      <y>63</y>
+      <w>91</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>784</x>
+      <y>553</y>
+      <w>224</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=red
+-Add: select MetaDataModel.
+-Update: no permission to update MetaDataModel.
+-Delete:no permission to delete MetaDataModel.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>693</x>
+      <y>574</y>
+      <w>105</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>7</x>
+      <y>560</y>
+      <w>161</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=red
+Add/Update/Delete no constraints.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>161</x>
+      <y>574</y>
+      <w>42</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>14</x>
+      <y>392</y>
+      <w>245</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=red
+-Add document to DocumentSet make 
+sure the selected document is not already added.
+-Delete document from DocumentSet : no constraints.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>140</x>
+      <y>441</y>
+      <w>49</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>567</x>
+      <y>854</y>
+      <w>224</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=red
+-Add/Update: select a document.
+-delete: cannot delete a document.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>637</x>
+      <y>812</y>
+      <w>21</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>98</x>
+      <y>847</y>
+      <w>224</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=red
+-Add document to aggregate: make
+ sure the selected document is not already added.
+delete document from aggregate : no constraints.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>784</y>
+      <w>21</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1281</x>
+      <y>763</y>
+      <w>126</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=red
+-Add: no constraints.
+-Update: cannot update document version.
+-delete: no constraints.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1344</x>
+      <y>609</y>
+      <w>35</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;30.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1190</x>
+      <y>735</y>
+      <w>112</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;50.0</additional_attributes>
+  </element>
+</diagram>

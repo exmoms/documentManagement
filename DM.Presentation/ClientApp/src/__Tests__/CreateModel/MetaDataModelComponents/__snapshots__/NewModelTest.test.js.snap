@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewModel matches snapshot 1`] = `
+<Fragment>
+  <WithStyles(ForwardRef(Typography))
+    align="left"
+    gutterBottom={true}
+    variant="h6"
+  >
+    documentmodel
+  </WithStyles(ForwardRef(Typography))>
+  <WithStyles(ForwardRef(Grid))
+    container={true}
+    spacing={3}
+  >
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      sm={6}
+      xs={12}
+    >
+      <WithStyles(ForwardRef(TextField))
+        autoComplete="off"
+        error={false}
+        fullWidth={true}
+        helperText=""
+        id="modelName"
+        label="namelabel"
+        name="modelName"
+        onChange={[Function]}
+        required={true}
+        value=""
+      />
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      sm={6}
+      xs={12}
+    >
+      <ComboBox
+        className="ComboBox"
+        onChange={[Function]}
+        options={Array []}
+        value={
+          Object {
+            "documentClassSelected": Array [
+              Object {},
+            ],
+            "step_1_error": undefined,
+          }
+        }
+      />
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(Grid))>
+</Fragment>
+`;

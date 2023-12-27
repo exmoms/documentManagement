@@ -1,0 +1,265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModelAttatchments matches snapshot 1`] = `
+<Fragment>
+  <WithStyles(ForwardRef(Typography))
+    align="left"
+    gutterBottom={true}
+    variant="h6"
+  >
+    modelproperties
+  </WithStyles(ForwardRef(Typography))>
+  <WithStyles(ForwardRef(Grid))
+    container={true}
+    spacing={3}
+  >
+    <WithStyles(ForwardRef(Grid))
+      className="makeStyles-textAlign-1"
+      item={true}
+      xs={3}
+    >
+      <WithStyles(ForwardRef(FormControlLabel))
+        control={
+          <ForwardRef(WithStyles)
+            checked={true}
+            className="isCompound"
+            color="secondary"
+            name="isCompound"
+            onChange={[Function]}
+            value={true}
+          />
+        }
+        label="iscompound"
+      />
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={9}
+    />
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={12}
+    >
+      <div
+        className="marginleft"
+        key="0"
+      >
+        <WithStyles(ForwardRef(TextField))
+          error={false}
+          fullWidth={true}
+          helperText=""
+          id="NameOfAttatchment0"
+          inputProps={
+            Object {
+              "data-id": 0,
+            }
+          }
+          label="nameofattatchment"
+          name="nameOfAttatchment[object Object]"
+          onChange={[Function]}
+          required={true}
+        />
+        <WithStyles(ForwardRef(Grid))
+          className="makeStyles-textAlign-1"
+          item={true}
+          md={3}
+          xs={6}
+        >
+          <WithStyles(ForwardRef(FormControlLabel))
+            control={
+              <ForwardRef(WithStyles)
+                checked={false}
+                color="secondary"
+                id="isRequired0"
+                inputProps={
+                  Object {
+                    "data-id": 0,
+                  }
+                }
+                name="isRequired[object Object]"
+                onChange={[Function]}
+              />
+            }
+            label="isrequired"
+          />
+        </WithStyles(ForwardRef(Grid))>
+        <WithStyles(ForwardRef(Grid))
+          item={true}
+          md={9}
+          xs={6}
+        />
+        <WithStyles(ForwardRef(Grid))
+          className="makeStyles-textAlign-1"
+          item={true}
+          md={6}
+          xs={12}
+        >
+          <WithStyles(ForwardRef(Button))
+            color="secondary"
+            id="removeCompound"
+            onClick={[Function]}
+            startIcon={<UNDEFINED />}
+            variant="contained"
+          >
+            remove
+          </WithStyles(ForwardRef(Button))>
+        </WithStyles(ForwardRef(Grid))>
+      </div>
+      <WithStyles(ForwardRef(Grid))
+        className="makeStyles-textAlign-1"
+        item={true}
+        xs={12}
+      >
+        <br />
+        <WithStyles(ForwardRef(Button))
+          id="addCompound"
+          onClick={[Function]}
+          startIcon={<UNDEFINED />}
+          variant="contained"
+        >
+          addnewattribute
+        </WithStyles(ForwardRef(Button))>
+      </WithStyles(ForwardRef(Grid))>
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      className="makeStyles-textAlign-1"
+      item={true}
+      xs={3}
+    >
+      <WithStyles(ForwardRef(FormControlLabel))
+        control={
+          <ForwardRef(WithStyles)
+            checked={false}
+            className="isAggregated"
+            color="secondary"
+            name="isAggregated"
+            onChange={[Function]}
+            value={false}
+          />
+        }
+        label="isaggregated"
+      />
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={9}
+    />
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={12}
+    >
+      <WithStyles(ForwardRef(Grid))
+        container={true}
+        spacing={3}
+      >
+        <WithStyles(ForwardRef(Grid))
+          item={true}
+          xs={12}
+        >
+          <div
+            className="marginleft"
+            key="0"
+          >
+            <WithStyles(ForwardRef(Typography))
+              align="left"
+              gutterBottom={true}
+              variant="h6"
+            >
+              aggregated
+            </WithStyles(ForwardRef(Typography))>
+            <WithStyles(ForwardRef(Grid))
+              container={true}
+              spacing={3}
+            >
+              <WithStyles(ForwardRef(Grid))
+                item={true}
+                sm={6}
+                xs={12}
+              >
+                <WithStyles(ForwardRef(TextField))
+                  autoComplete="fname"
+                  error={false}
+                  fullWidth={true}
+                  helperText=""
+                  id="dataId0"
+                  inputProps={
+                    Object {
+                      "data-id": 0,
+                    }
+                  }
+                  label="namelabel"
+                  name="Name[object Object]"
+                  onChange={[Function]}
+                  required={true}
+                />
+              </WithStyles(ForwardRef(Grid))>
+              <WithStyles(ForwardRef(Grid))
+                item={true}
+                sm={6}
+                xs={12}
+              >
+                <CheckboxesTags
+                  RemoveAggergate={[Function]}
+                  aggregateMetaDataModelsParts={
+                    Array [
+                      Object {
+                        "AggregateName": "",
+                        "childMetaDataModelId": "",
+                      },
+                    ]
+                  }
+                  index={0}
+                  item={
+                    Object {
+                      "AggregateName": "",
+                      "childMetaDataModelId": "",
+                    }
+                  }
+                  onChange={[Function]}
+                  selectedMetaDataModels={Array []}
+                  value={
+                    Object {
+                      "MetaDataModels": Array [],
+                      "aggregateMetaDataModelsParts": Array [
+                        Object {
+                          "AggregateName": "",
+                          "childMetaDataModelId": "",
+                        },
+                      ],
+                      "compoundModels": Array [
+                        Object {
+                          "Caption": "",
+                          "IsRequired": false,
+                        },
+                      ],
+                      "isAggregated": false,
+                      "isCompound": true,
+                      "selectedMetaDataModels": Array [],
+                    }
+                  }
+                />
+              </WithStyles(ForwardRef(Grid))>
+              <WithStyles(ForwardRef(Grid))
+                className="makeStyles-textAlign-1"
+                item={true}
+                sm={6}
+                xs={12}
+              >
+                <WithStyles(ForwardRef(Button))
+                  color="secondary"
+                  id="RemoveAggergate"
+                  onClick={[Function]}
+                  startIcon={<UNDEFINED />}
+                  variant="contained"
+                >
+                  remove
+                </WithStyles(ForwardRef(Button))>
+              </WithStyles(ForwardRef(Grid))>
+            </WithStyles(ForwardRef(Grid))>
+          </div>
+        </WithStyles(ForwardRef(Grid))>
+      </WithStyles(ForwardRef(Grid))>
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(Grid))>
+</Fragment>
+`;

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>12</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>636</y>
+      <w>252</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Document Versions
+--
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>492</y>
+      <w>312</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1..n
+</panel_attributes>
+    <additional_attributes>230.0;10.0;230.0;70.0;10.0;70.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>672</x>
+      <y>444</y>
+      <w>252</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Document
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1104</x>
+      <y>456</y>
+      <w>252</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>MetaData Attributes.
+--
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1224</x>
+      <y>132</y>
+      <w>60</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1..n
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>912</x>
+      <y>120</y>
+      <w>216</w>
+      <h>396</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..n
+m2=1
+</panel_attributes>
+    <additional_attributes>10.0;300.0;100.0;300.0;100.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1104</x>
+      <y>84</y>
+      <w>252</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>MetaData Model
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>912</x>
+      <y>72</y>
+      <w>216</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1..n
+</panel_attributes>
+    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>672</x>
+      <y>84</y>
+      <w>252</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Document class
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1368</x>
+      <y>648</y>
+      <w>252</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Number Values
+--
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1104</x>
+      <y>648</y>
+      <w>252</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>String Values
+--
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1236</x>
+      <y>504</y>
+      <w>60</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1344</x>
+      <y>492</y>
+      <w>192</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+</panel_attributes>
+    <additional_attributes>120.0;130.0;120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>264</x>
+      <y>1200</y>
+      <w>396</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>User-Document RelationShip
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>852</x>
+      <y>864</y>
+      <w>312</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>EAV:
+Entity: Documnet.
+Attribute: MetaData Attribute.
+Values.
+fg=black
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>492</x>
+      <y>684</y>
+      <w>1056</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+
+bg=pink</panel_attributes>
+    <additional_attributes>840.0;20.0;840.0;80.0;10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1392</x>
+      <y>360</y>
+      <w>252</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Data Type
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1344</x>
+      <y>408</y>
+      <w>216</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..n
+</panel_attributes>
+    <additional_attributes>150.0;10.0;150.0;50.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>228</x>
+      <y>432</y>
+      <w>252</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Documnet Set - Document
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>12</x>
+      <y>288</y>
+      <w>252</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Document Set
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>108</x>
+      <y>336</y>
+      <w>144</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1..n
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0;100.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>468</x>
+      <y>444</y>
+      <w>228</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..n
+m2=1
+</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1104</x>
+      <y>240</y>
+      <w>252</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Model-Attribute
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1224</x>
+      <y>288</y>
+      <w>60</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1..n
+</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>636</y>
+      <w>252</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Aggregate-Document
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>204</x>
+      <y>552</y>
+      <w>240</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1..n
+</panel_attributes>
+    <additional_attributes>170.0;70.0;170.0;20.0;10.0;20.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>204</x>
+      <y>684</y>
+      <w>252</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1..n
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;170.0;70.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>660</y>
+      <w>228</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+</panel_attributes>
+    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>804</x>
+      <y>648</y>
+      <w>252</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Compound Docx files
+--
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>972</x>
+      <y>504</y>
+      <w>204</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;70.0;140.0;70.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>564</x>
+      <y>684</y>
+      <w>708</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+</panel_attributes>
+    <additional_attributes>550.0;20.0;550.0;50.0;10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>24</x>
+      <y>24</y>
+      <w>168</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=blue
+--
+Parts or All Doc
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Explorer Explorer matches snapshot 1`] = `"<div class=\\"sc-fzplWN haKEer\\"><span id=\\"goToUpperLevelId\\">path_Home  / </span></div><div class=\\"sc-fzpans cIyyYC\\"><div class=\\"sc-AxhUy feYMlc\\">+</div></div>"`;

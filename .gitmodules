@@ -1,0 +1,3 @@
+[submodule "DM.Presentation/ClientApp"]
+	path = DM.Presentation/ClientApp
+	url = ../../documentmanagement/document-management-system-client-side.git

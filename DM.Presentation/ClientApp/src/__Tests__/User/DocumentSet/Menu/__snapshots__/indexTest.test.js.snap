@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu Menu matches snapshot 1`] = `"<div class=\\"sc-AxjAm cZyWjs\\"><div class=\\"sc-AxirZ cOLSrI content\\">1</div></div>"`;

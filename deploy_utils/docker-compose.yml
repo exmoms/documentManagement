@@ -1,0 +1,54 @@
+version: '3'
+
+services:
+  web:
+    image: registry.gitlab.scase.local/documentmanagement/document-management:$WEBAPP_IMAGE_TAG
+    depends_on:
+      - db
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      ASPNETCORE_URLS: "https://+;http://+"
+      ASPNETCORE_HTTPS_PORT: 443
+      ASPNETCORE_Kestrel__Certificates__Default__Password: $STAGING_SERVER_PFX_KEY
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /https/staging.scase.local.pfx
+      DB_HOST: db
+      DB_USER: sa
+      # SECRET_* variables are passed in the initial run only
+      # They are afterwards read from a secure storage in the secrets_config_volume
+      SECRET_DB_PASSWORD: "${SECRET_DB_PASSWORD}"
+      SECRET_JWT_ISSUER_SIGNING_KEY: "${SECRET_JWT_ISSUER_SIGNING_KEY}"
+    volumes:
+      # stores configuration secrets protected using ASP.NET Core DataProtection
+      - secrets_config_volume:/app/secrets_config
+      # stores the keys internally used by ASP.NET Core DataProtection
+      - dataprotection_keys_volume:/root/.aspnet/DataProtection-Keys
+      # persistent storage for log files
+      - web_logs_volume:/app/Logs
+      # contains the pfx certificate required to enable HTTPS
+      - ${HOME}/.aspnet/https:/https/
+    # the provided command does the following:
+    # 1. waits for 30 seconds (to make sure the sql server has been started) TODO: replace with something more robust?
+    # 2. starts the dotnet webapplication (which should restore the latest migrations at runtime)
+    command: >
+      bash -c "sleep 30 &&
+               ./config_and_run.sh DM.Presentation.dll"
+    restart: unless-stopped
+               
+  db:
+    image: registry.gitlab.scase.local/general/dockerhubmirror/mssql_server:2019-latest
+    container_name: mssql_server_2019
+    environment:
+      DB_Name: "${DATABASE_NAME}"
+      SA_PASSWORD: "${SECRET_DB_PASSWORD}"
+      ACCEPT_EULA: "Y"
+    volumes:
+      - sqlvolume:/var/opt/mssql
+    restart: unless-stopped
+        
+volumes:
+  secrets_config_volume:
+  dataprotection_keys_volume:
+  web_logs_volume:
+  sqlvolume:

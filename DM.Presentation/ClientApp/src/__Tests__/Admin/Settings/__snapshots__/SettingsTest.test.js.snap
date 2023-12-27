@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Settings matches snapshot 1`] = `
+<withI18nextTranslation(Settings)
+  classes={
+    Object {
+      "heading": "withI18nextTranslation(Settings)-heading-2",
+      "root": "withI18nextTranslation(Settings)-root-1",
+    }
+  }
+/>
+`;

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditProfilePopup matches snapshot 1`] = `
+<withI18nextTranslation(EditProfilePopup)
+  action={[MockFunction]}
+  classes={
+    Object {
+      "margin": "withI18nextTranslation(EditProfilePopup)-margin-2",
+      "paper": "withI18nextTranslation(EditProfilePopup)-paper-1",
+    }
+  }
+  show={true}
+  user={
+    Object {
+      "userId": 1,
+      "userName": "userName A",
+    }
+  }
+/>
+`;

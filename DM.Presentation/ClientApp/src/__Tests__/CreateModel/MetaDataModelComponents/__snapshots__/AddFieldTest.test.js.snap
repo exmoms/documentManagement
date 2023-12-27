@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add Field matches snapshot 1`] = `
+<Fragment>
+  <WithStyles(ForwardRef(Grid))
+    container={true}
+    spacing={3}
+  >
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      xs={12}
+    >
+      <div
+        className="marginleft"
+        key="0"
+      >
+        <WithStyles(ForwardRef(Typography))
+          align="left"
+          color="inherit"
+          noWrap={true}
+          variant="h6"
+        >
+          attribute
+           
+          1
+          :
+        </WithStyles(ForwardRef(Typography))>
+        <WithStyles(ForwardRef(TextField))
+          className="NameField0"
+          error={false}
+          fullWidth={true}
+          helperText=""
+          inputProps={
+            Object {
+              "data-id": 0,
+            }
+          }
+          label="attributename"
+          name="metaDataAttribute0Name"
+          onChange={[Function]}
+          required={true}
+          type="text"
+        />
+        <WithStyles(ForwardRef(Grid))
+          className="makeStyles-textAlign-4"
+          item={true}
+          xs={12}
+        >
+          <WithStyles(ForwardRef(FormControlLabel))
+            control={
+              <ForwardRef(WithStyles)
+                checked={false}
+                className="CheckBox0"
+                color="secondary"
+                inputProps={
+                  Object {
+                    "data-id": 0,
+                  }
+                }
+                name="isRequired[object Object]"
+                onChange={[Function]}
+                value={false}
+              />
+            }
+            label="isrequired"
+          />
+        </WithStyles(ForwardRef(Grid))>
+        <WithStyles(ForwardRef(Grid))
+          item={true}
+          sm={6}
+          xs={12}
+        >
+          <ComboBox
+            className="ComboBox0"
+            id={0}
+            onChange={[Function]}
+            options={
+              Array [
+                Object {
+                  "id": 1,
+                  "name": "Bool",
+                },
+                Object {
+                  "id": 2,
+                  "name": "Date",
+                },
+                Object {
+                  "id": 3,
+                  "name": "Decimal",
+                },
+                Object {
+                  "id": 4,
+                  "name": "Double",
+                },
+                Object {
+                  "id": 5,
+                  "name": "Int",
+                },
+                Object {
+                  "id": 6,
+                  "name": "String",
+                },
+              ]
+            }
+            value={
+              Object {
+                "dataTypeID": undefined,
+                "step_3_error": undefined,
+              }
+            }
+          />
+        </WithStyles(ForwardRef(Grid))>
+        <br />
+        <WithStyles(ForwardRef(Grid))
+          className="makeStyles-textAlign-4"
+        >
+          <WithStyles(ForwardRef(Button))
+            color="secondary"
+            id="removeAttribute"
+            onClick={[Function]}
+            startIcon={<UNDEFINED />}
+            variant="contained"
+          >
+            remove
+          </WithStyles(ForwardRef(Button))>
+        </WithStyles(ForwardRef(Grid))>
+        <br />
+        <br />
+      </div>
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      className="makeStyles-textAlign-4"
+      item={true}
+      xs={12}
+    >
+      <WithStyles(ForwardRef(Button))
+        id="addAttribute"
+        onClick={[Function]}
+        startIcon={<UNDEFINED />}
+        variant="contained"
+      >
+        addnewattribute
+      </WithStyles(ForwardRef(Button))>
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(Grid))>
+</Fragment>
+`;

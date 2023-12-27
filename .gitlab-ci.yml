@@ -1,0 +1,179 @@
+stages:
+  - build
+  - test
+  - package
+  - deploy
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+build_job:
+  stage: build
+  image: registry.gitlab.scase.local/general/devopsdockerimages/dotnet_core_sdk-3.1.101_nodejs-12:master
+  # retry automatically when job times out (to workaround npm install issues)
+  retry:
+    max: 2
+    when: stuck_or_timeout_failure
+  # use cache for faster dotnet restore
+  cache:
+    key: ${CI_JOB_NAME}
+    paths:
+      - nuget_packages_cache_dir
+      - DM.Presentation/ClientApp/node_modules
+  variables:
+    NUGET_PACKAGES: ${CI_PROJECT_DIR}/nuget_packages_cache_dir
+  script:
+    - >
+      if [ -d "nuget_packages_cache_dir" ]; then
+        echo using nuget packages from cache directory
+      else
+        echo no nuget cache directory found, nuget package retrieval might take some time
+      fi
+    - >
+      if [ -d "DM.Presentation/ClientApp/node_modules" ]; then
+        echo using node packages from cache directory
+      else
+        echo no node_modules cache directory found, node package retrieval might take some time
+      fi
+    - dotnet restore
+    - dotnet publish /p:TreatWarningsAsErrors=true /warnaserror -c Release -o $CI_PROJECT_DIR/app/publish
+  artifacts:
+    paths:
+      - app/publish/
+
+test_server_side_job:
+  stage: test
+  image: registry.gitlab.scase.local/general/devopsdockerimages/dotnet_core_sdk-3.1.101_nodejs-12:master
+  allow_failure: true
+  script:
+    - cd app/publish/
+    - dotnet vstest DM.UnitTest.dll
+  dependencies:
+    - build_job
+
+test_client_side_job:
+  stage: test
+  image: registry.gitlab.scase.local/general/devopsdockerimages/dotnet_core_sdk-3.1.101_nodejs-12:master
+  # retry automatically when job times out (to workaround npm install issues)
+  retry:
+    max: 2
+    when: stuck_or_timeout_failure
+  # use node_modules cache from build_job
+  cache:
+    key: build_job
+    paths:
+      - nuget_packages_cache_dir
+      - DM.Presentation/ClientApp/node_modules
+  allow_failure: true
+  script:
+    - cd $CI_PROJECT_DIR/DM.Presentation/ClientApp
+    - npm install
+    - npm test
+  dependencies:
+    - build_job
+
+package_job:
+  stage: package
+  image:
+    name: registry.gitlab.scase.local/general/dockerhubmirror/kaniko-project_executor:debug-v0.17.1
+    entrypoint: [""]
+  # job is available only on protected branches/tags
+  only:
+    variables:
+      - $CI_COMMIT_REF_PROTECTED == "true"
+  before_script:
+    # provide required credentials to kaniko (in order to push the resulting image to the project's container registry)
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+    # add SCASE_rootCA.crt to the list of trusted root certificate authorities
+    - |
+      echo "-----BEGIN CERTIFICATE-----
+      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
+      bR8H
+      -----END CERTIFICATE-----" >> /kaniko/ssl/certs/ca-certificates.crt
+  script:
+    - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
+  dependencies:
+    - build_job
+
+
+
+# deploy_job requirements:
+#   - STAGING_SERVER_ADDRESS: the IP address/hostname of the staging server
+#   - STAGING_SERVER_USER: a username with the required permissions on the server
+#   - STAGING_SERVER_SSH_KEY: a private key that can authenticate STAGING_SERVER_USER on STAGING_SERVER_ADDRESS
+#   - The staging server should have docker installed
+#   - STAGING_SERVER_USER should be able to issue docker commands without using sudo. In other words, STAGING_SERVER_USER is either root or a user that has been added to the docker group (see https://docs.docker.com/install/linux/linux-postinstall/)
+#   - The docker installation on the staging server should be able to access our local container registry. This requires trusting SCASE_rootCA.crt in the server.
+#   - The https ssl pfx certificate file is available at ${HOME}/.aspnet/https/staging.scase.local.pfx
+#   - STAGING_SERVER_PFX_KEY: the key used to encrypt the certificate pfx file
+#   - DATABASE_NAME: The name of the database.
+#   - SECRET_DB_PASSWORD: sa user password for deployed mssql server
+#   - SECRET_JWT_ISSUER_SIGNING_KEY: the key used to sign issued jwt tokens
+# Note that not all characters are allowed to be used in passwords. For example, $ is handled incorrectly by gitlab ci (see gitlab-foss#27436)
+# The following characters are tested to be working:
+# - ascii lower-case and upper-case letters
+# - digits (0-9)
+# - the following symbols only: underscore (_), at sign(@), ampersand(&), exclamation(!), percent symbol(%) and the pound symbol(#)
+# TODO: investigate on strange substution errors in docker-compose when using a single parenthesis
+deploy_job:
+  stage: deploy
+  image: registry.gitlab.scase.local/general/devopsdockerimages/openssh-client:master
+  # the deployment job should be triggered manually
+  when: manual
+  # job is available only on protected branches/tags
+  only:
+    variables:
+      - $CI_COMMIT_REF_PROTECTED == "true"
+  script:
+    # TODO: better alternative to disabling StringHostKeyChecking. Maybe provide the public key via a secret variable and add to known hosts manually?
+    # prepare ssh access
+    - mkdir ~/.ssh
+    - cp $STAGING_SERVER_SSH_KEY ~/.ssh/id_rsa
+    - chmod 400 ~/.ssh/id_rsa
+    # this is required to add the server to the list of known hosts; Subsequent commands don't need to disable StrictHostKeyChecking.
+    - ssh -o StrictHostKeyChecking=no $STAGING_SERVER_USER@$STAGING_SERVER_ADDRESS echo hello from the other side
+    # backup database if exist before the new installation.
+    - "scp deploy_utils/backup-database.sh $STAGING_SERVER_USER@$STAGING_SERVER_ADDRESS:"
+    - ssh $STAGING_SERVER_USER@$STAGING_SERVER_ADDRESS "WEBAPP_IMAGE_TAG='$CI_COMMIT_REF_SLUG' DATABASE_NAME='$DATABASE_NAME' SECRET_DB_PASSWORD='$SECRET_DB_PASSWORD' SECRET_JWT_ISSUER_SIGNING_KEY='$SECRET_JWT_ISSUER_SIGNING_KEY' STAGING_SERVER_PFX_KEY='$STAGING_SERVER_PFX_KEY' sh backup-database.sh"
+    # stop previous container and remove (if any)
+    - ssh $STAGING_SERVER_USER@$STAGING_SERVER_ADDRESS "WEBAPP_IMAGE_TAG='$CI_COMMIT_REF_SLUG' SECRET_DB_PASSWORD='$SECRET_DB_PASSWORD' SECRET_JWT_ISSUER_SIGNING_KEY='$SECRET_JWT_ISSUER_SIGNING_KEY' STAGING_SERVER_PFX_KEY='$STAGING_SERVER_PFX_KEY' docker-compose down || true"
+    # login to gitlab container registry from staging server using the ephemeral credentials provided by $CI_REGISTRY_* environment variables
+    - ssh $STAGING_SERVER_USER@$STAGING_SERVER_ADDRESS docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD registry.gitlab.scase.local
+    # copy new docker-compose file (quotes are required to escape the colon at the end)
+    - "scp deploy_utils/docker-compose.yml $STAGING_SERVER_USER@$STAGING_SERVER_ADDRESS:"
+    # pull corresponding image from gitlab container registry
+    - ssh $STAGING_SERVER_USER@$STAGING_SERVER_ADDRESS "WEBAPP_IMAGE_TAG='$CI_COMMIT_REF_SLUG' SECRET_DB_PASSWORD='$SECRET_DB_PASSWORD' SECRET_JWT_ISSUER_SIGNING_KEY='$SECRET_JWT_ISSUER_SIGNING_KEY' STAGING_SERVER_PFX_KEY='$STAGING_SERVER_PFX_KEY' docker-compose pull"
+    # logout from gitlab container registry
+    - ssh $STAGING_SERVER_USER@$STAGING_SERVER_ADDRESS docker logout registry.gitlab.scase.local
+    # pull and start the new container as a daemon
+    - ssh $STAGING_SERVER_USER@$STAGING_SERVER_ADDRESS "WEBAPP_IMAGE_TAG='$CI_COMMIT_REF_SLUG' SECRET_DB_PASSWORD='$SECRET_DB_PASSWORD' SECRET_JWT_ISSUER_SIGNING_KEY='$SECRET_JWT_ISSUER_SIGNING_KEY' STAGING_SERVER_PFX_KEY='$STAGING_SERVER_PFX_KEY' docker-compose up -d"

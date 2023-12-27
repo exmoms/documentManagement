@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index Icon matches snapshot 1`] = `"<div class=\\"sc-AxheI kEOPNl\\"><div class=\\"sc-Axmtr ilxBVU\\"><img src=\\"folder.png\\" class=\\"sc-AxmLO cAKCgh\\"></div><div class=\\"sc-fzozJi jxgYyc\\">name A</div></div>"`;

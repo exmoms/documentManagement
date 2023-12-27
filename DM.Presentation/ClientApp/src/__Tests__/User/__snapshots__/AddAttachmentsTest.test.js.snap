@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddAttachments AddAttachments matches snapshot 1`] = `
+<div>
+  <div>
+    <div
+      className="MuiPaper-root MuiTableContainer-root MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <table
+        aria-label="simple table"
+        className="MuiTable-root withI18nextTranslation(AddAttachments)-table-6"
+      >
+        <thead
+          className="MuiTableHead-root"
+        >
+          <tr
+            className="MuiTableRow-root MuiTableRow-head"
+          >
+            <th
+              aria-sort={null}
+              className="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              namelabel
+            </th>
+            <th
+              aria-sort={null}
+              className="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              actions
+            </th>
+            <th
+              aria-sort={null}
+              className="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              attachedfilename
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          className="MuiTableBody-root"
+        >
+          <tr
+            className="MuiTableRow-root"
+          >
+            <td
+              aria-sort={null}
+              className="MuiTableCell-root MuiTableCell-body"
+            />
+            <td
+              aria-sort={null}
+              className="MuiTableCell-root MuiTableCell-body"
+            >
+              <button
+                className="MuiButtonBase-root MuiButton-root MuiButton-contained withI18nextTranslation(AddAttachments)-buttonTable-11 MuiButton-containedPrimary MuiButton-containedSizeSmall MuiButton-sizeSmall"
+                disabled={false}
+                id="addAttachment1"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  <span
+                    className="MuiButton-startIcon MuiButton-iconSizeSmall"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="MuiSvgIcon-root"
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"
+                      />
+                    </svg>
+                  </span>
+                  <input
+                    className="onChangeFile1"
+                    id={1}
+                    onChange={[Function]}
+                    style={
+                      Object {
+                        "display": "none",
+                      }
+                    }
+                    type="file"
+                  />
+                  button_attach
+                </span>
+              </button>
+            </td>
+            <td
+              aria-sort={null}
+              className="MuiTableCell-root MuiTableCell-body"
+              id="table-cell-aggregated-doc1"
+            >
+              AttachedDoc2
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div />
+</div>
+`;

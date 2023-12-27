@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ViewModel matches snapshot 1`] = `
+<WithStyles(ForwardRef(Dialog))
+  aria-labelledby="customized-dialog-title"
+  onClose={[MockFunction]}
+  open={true}
+>
+  <WithStyles(Component)
+    id="customized-dialog-title"
+    onClose={[MockFunction]}
+  />
+  <ReviewModel
+    value={
+      Object {
+        "aggregateMetaDataModelsParts": Array [
+          Object {
+            "aggregateName": "",
+          },
+        ],
+        "compoundModels": Array [
+          Object {
+            "caption": "",
+            "isRequired": false,
+          },
+        ],
+        "documentClassSelected": Object {
+          "documentClassName": "",
+        },
+        "isAggregated": false,
+        "isCompound": false,
+        "metaDataAttribute": Array [
+          Object {
+            "dataTypeID": "",
+            "isRequired": false,
+            "metaDataAttributeName": "",
+          },
+        ],
+        "metaDataModelName": "",
+        "selectedMetaDataModels": Array [
+          Object {
+            "metaDataModelName": "",
+          },
+        ],
+      }
+    }
+  />
+  <WithStyles(WithStyles(ForwardRef(DialogActions)))>
+    <WithStyles(ForwardRef(Button))
+      autoFocus={true}
+      color="primary"
+      onClick={[Function]}
+    >
+      print
+    </WithStyles(ForwardRef(Button))>
+  </WithStyles(WithStyles(ForwardRef(DialogActions)))>
+</WithStyles(ForwardRef(Dialog))>
+`;

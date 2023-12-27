@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UsersTable matches snapshot 1`] = `
+<UsersTable
+  i18n={Object {}}
+  t={[Function]}
+  tReady={false}
+/>
+`;

@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Aggregate Document Child is not existed" xml:space="preserve">
+    <value>المستند المجمع الفرعي غير موجود</value>
+  </data>
+  <data name="An error happened when trying to send the email, please report to the 'Admin'." xml:space="preserve">
+    <value>حدث خطأ عند محاولة إرسال البريد الالكتروني، الرجاء مراجعة مسؤول النظام</value>
+  </data>
+  <data name="Attachment Compound Model Id Existed Before" xml:space="preserve">
+    <value>نموذج هذا المرفق موجود مسبقاً</value>
+  </data>
+  <data name="Attachment Is Required" xml:space="preserve">
+    <value>الملف مطلوب</value>
+  </data>
+  <data name="Attachment Name Existed Before" xml:space="preserve">
+    <value>اسم المرفق موجود مسبقاً</value>
+  </data>
+  <data name="Attachment Name Is Null Or Empty" xml:space="preserve">
+    <value>اسم المرفق فارغ</value>
+  </data>
+  <data name="Attachment NOT FOUND" xml:space="preserve">
+    <value>المرفق غير موجود</value>
+  </data>
+  <data name="Attribute Id Does Not Belong To Model" xml:space="preserve">
+    <value>الواصفة غير تابعة للنموذج</value>
+  </data>
+  <data name="Child Document Version Is Not Existed" xml:space="preserve">
+    <value>إصدار المستند الفرعي غير موجود</value>
+  </data>
+  <data name="Children NOT FOUND" xml:space="preserve">
+    <value>الأبناء غير موجودون</value>
+  </data>
+  <data name="Document Already Archived" xml:space="preserve">
+    <value>المستند مؤرشف مسبقاً</value>
+  </data>
+  <data name="Document Deleted Before" xml:space="preserve">
+    <value>المستند محذوف مسبقاً</value>
+  </data>
+  <data name="Document Doesn't Contain Any Image" xml:space="preserve">
+    <value>المستند لا يحتوي أي صور</value>
+  </data>
+  <data name="Document Doesn't Contain Attachment" xml:space="preserve">
+    <value>المستند لا يحتوي هذا المرفق</value>
+  </data>
+  <data name="Document Is Archived" xml:space="preserve">
+    <value>المستند مؤرشف</value>
+  </data>
+  <data name="Document Is Not Archived" xml:space="preserve">
+    <value>المستند ليس مؤرشفاً مسبقاً</value>
+  </data>
+  <data name="Document Name Is Null" xml:space="preserve">
+    <value>اسم المستند فارغ</value>
+  </data>
+  <data name="Document NOT FOUND" xml:space="preserve">
+    <value>المستند غير موجود</value>
+  </data>
+  <data name="Document Version NOT FOUND" xml:space="preserve">
+    <value>إصدار المستند غير موجود</value>
+  </data>
+  <data name="Invalid File" xml:space="preserve">
+    <value>الملف غير موجود او تالف</value>
+  </data>
+  <data name="Metadata Model Has No Children" xml:space="preserve">
+    <value>النموذج ليس لديه نماذج مجمعة فرعية</value>
+  </data>
+  <data name="Metadata NOT FOUND" xml:space="preserve">
+    <value>النموذج غير موجود</value>
+  </data>
+  <data name="More Than One Value For Attribute" xml:space="preserve">
+    <value>أكثر من قيمة واحدة للواصفة</value>
+  </data>
+  <data name="Null Values" xml:space="preserve">
+    <value>البيانات فارغة</value>
+  </data>
+  <data name="Please add required attachments." xml:space="preserve">
+    <value>يرجى تحميل المرفقات المطلوبة(*)</value>
+  </data>
+  <data name="Required Value" xml:space="preserve">
+    <value>القيمة مطلوبة</value>
+  </data>
+  <data name="Scan file is required" xml:space="preserve">
+    <value>صورة المستند غير مدخلة</value>
+  </data>
+  <data name="The Metadata Model Of The Attribute Is Not The Same As The Metadata Model Of The Document" xml:space="preserve">
+    <value>النموذج الخاص بالواصفة لا يطابق نموذج المستند</value>
+  </data>
+  <data name="Wrong Aggregate Metadata model" xml:space="preserve">
+    <value>النموذج المجمع خاطئ</value>
+  </data>
+  <data name="Wrong Child Metadata Model" xml:space="preserve">
+    <value>النموذج الفرعي خاطئ</value>
+  </data>
+</root>

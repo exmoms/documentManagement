@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Review Model matches snapshot 1`] = `
+<Fragment>
+  <div
+    className="makeStyles-textAlign-1"
+  >
+    <WithStyles(ForwardRef(Typography))
+      align="center"
+      gutterBottom={true}
+      variant="h6"
+    >
+      modelreview
+    </WithStyles(ForwardRef(Typography))>
+    <hr />
+    <p
+      id="ModelName"
+    >
+      <b>
+        modelname
+      </b>
+      : 
+      Meta Data Model Name
+    </p>
+    <p
+      id="DocumentClassName"
+    >
+      <b>
+        documentparagraph
+      </b>
+      :
+       
+    </p>
+    <p
+      id="isCompound"
+    >
+      <b>
+        notcompoundmodel
+      </b>
+    </p>
+    <br />
+    <p
+      id="isAggregated"
+    >
+      <b>
+        notaggregated
+      </b>
+    </p>
+    <br />
+    <b>
+      paragraphmetadata
+    </b>
+    :
+    <br />
+    <StickyHeadTable
+      columns={
+        Array [
+          Object {
+            "id": "metaDataAttributeName",
+            "label": "nameofattribute",
+            "minWidth": 170,
+          },
+          Object {
+            "id": "dataTypeID",
+            "label": "type",
+            "minWidth": 100,
+          },
+          Object {
+            "align": "center",
+            "id": "isRequired",
+            "label": "isrequired",
+            "minWidth": 170,
+          },
+        ]
+      }
+      rows={
+        Array [
+          Object {
+            "dataTypeID": undefined,
+            "isRequired": false,
+            "metaDataAttributeName": undefined,
+          },
+        ]
+      }
+    />
+  </div>
+</Fragment>
+`;

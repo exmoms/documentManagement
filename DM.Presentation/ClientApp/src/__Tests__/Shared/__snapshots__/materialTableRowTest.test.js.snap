@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableBodyRow matches snapshot 1`] = `
+<Fragment>
+  <WithStyles(ForwardRef(TableRow))
+    actions={
+      Array [
+        Object {
+          "position": "toolbar",
+        },
+        Object {
+          "position": "row",
+        },
+        Object {
+          "position": "toolbarOnSelect",
+        },
+      ]
+    }
+    hover={true}
+    id="tableRow1"
+    index={1}
+    level={1}
+    localization={
+      Object {
+        "addRemoveColumns": "Add or remove columns",
+        "exportAriaLabel": "Export",
+        "exportName": "Export as CSV",
+        "exportTitle": "Export",
+        "nRowsSelected": "3",
+        "searchPlaceholder": "Search",
+        "searchTooltip": "Search",
+        "showColumnsAriaLabel": "Show Columns",
+        "showColumnsTitle": "Show Columns",
+      }
+    }
+    onClick={[Function]}
+    path="path"
+    selected={true}
+    style={
+      Object {
+        "cursor": "pointer",
+        "opacity": 0.2,
+        "transition": "all ease 300ms",
+      }
+    }
+  >
+    <WithStyles(ForwardRef(TableCell))
+      id="groupOrderGreaterThanZero"
+      key="key-group-cell1"
+      padding="none"
+      size="medium"
+    />
+    <WithStyles(ForwardRef(TableCell))
+      id="tableCellRenderSelectionColumn"
+      key="key-selection-column"
+      padding="none"
+      size="medium"
+      style={
+        Object {
+          "width": 42,
+        }
+      }
+    >
+      <WithStyles(ForwardRef(Checkbox))
+        checked={true}
+        id="checkBoxRenderSelectionColumn"
+        onChange={[Function]}
+        onClick={[Function]}
+        size="medium"
+        style={
+          Object {
+            "marginLeft": 9,
+          }
+        }
+        value="2"
+      />
+    </WithStyles(ForwardRef(TableCell))>
+    <WithStyles(ForwardRef(TableCell))
+      key="key-actions-column"
+      padding="none"
+      size="medium"
+      style={
+        Object {
+          "0": "a",
+          "1": "c",
+          "10": "l",
+          "11": "S",
+          "12": "t",
+          "13": "y",
+          "14": "l",
+          "15": "e",
+          "2": "t",
+          "3": "i",
+          "4": "o",
+          "5": "n",
+          "6": "s",
+          "7": "C",
+          "8": "e",
+          "9": "l",
+          "padding": "0px 5px",
+          "width": 42,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "display": "flex",
+          }
+        }
+      >
+        <ForwardRef
+          actions={
+            Array [
+              Object {
+                "position": "row",
+              },
+            ]
+          }
+          components={
+            Object {
+              "Actions": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "Cell": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "DetailPanel": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+            }
+          }
+          data={
+            Object {
+              "checked": true,
+              "data": "Data A",
+              "id": 1,
+              "isTreeExpanded": true,
+              "tableData": Object {
+                "checked": true,
+                "childRows": Array [
+                  Object {
+                    "id": 1,
+                    "tableData": Object {
+                      "editing": true,
+                    },
+                  },
+                ],
+                "id": 2,
+                "showDetailPanel": [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      [Circular],
+                    ],
+                  ],
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                  ],
+                },
+              },
+            }
+          }
+          size="medium"
+        />
+      </div>
+    </WithStyles(ForwardRef(TableCell))>
+    <WithStyles(ForwardRef(TableCell))
+      id="tableCell2renderDetailPanelColumn"
+      key="key-detail-panel-column"
+      padding="none"
+      size="medium"
+    >
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "textAlign": "center",
+            "width": 0,
+          }
+        }
+      />
+    </WithStyles(ForwardRef(TableCell))>
+  </WithStyles(ForwardRef(TableRow))>
+  <WithStyles(ForwardRef(TableRow))>
+    <WithStyles(ForwardRef(TableCell))
+      colSpan={4}
+      padding="none"
+      size="medium"
+    />
+  </WithStyles(ForwardRef(TableRow))>
+</Fragment>
+`;

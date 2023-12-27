@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notifications matches snapshot 1`] = `
+<Fragment>
+  <WithStyles(ForwardRef(Alert))
+    action={
+      <ForwardRef(WithStyles)
+        aria-label="close"
+        color="inherit"
+        onClick={[Function]}
+        size="small"
+      >
+        <UNDEFINED
+          fontSize="inherit"
+        />
+      </ForwardRef(WithStyles)>
+    }
+    severity="error"
+  >
+    <WithStyles(ForwardRef(Typography))
+      align="left"
+      color="primary"
+      variant="subtitle1"
+    >
+      <ol>
+        <li
+          id="errorMessageItem0"
+          key="0"
+        >
+          error 1
+        </li>
+        <li
+          id="errorMessageItem1"
+          key="1"
+        >
+          error 2
+        </li>
+      </ol>
+    </WithStyles(ForwardRef(Typography))>
+  </WithStyles(ForwardRef(Alert))>
+</Fragment>
+`;

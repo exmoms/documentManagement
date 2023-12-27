@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfigEmail matches snapshot 1`] = `
+<withI18nextTranslation(ConfigEmail)
+  classes={
+    Object {
+      "form": "withI18nextTranslation(ConfigEmail)-form-2",
+      "margin": "withI18nextTranslation(ConfigEmail)-margin-4",
+      "paper": "withI18nextTranslation(ConfigEmail)-paper-1",
+      "submit": "withI18nextTranslation(ConfigEmail)-submit-3",
+      "textField": "withI18nextTranslation(ConfigEmail)-textField-5",
+    }
+  }
+/>
+`;

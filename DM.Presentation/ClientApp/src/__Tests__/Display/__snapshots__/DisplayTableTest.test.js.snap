@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DisplayTable matches snapshot 1`] = `
+<withI18nextTranslation(DisplayTable)
+  Columns={
+    Array [
+      Object {
+        "field": "id",
+        "title": "Document Class Id",
+      },
+      Object {
+        "field": "documentClassName",
+        "title": "Document Class Name",
+      },
+      Object {
+        "field": "userID",
+        "title": "User Id",
+      },
+      Object {
+        "field": "addedDate",
+        "title": "Added Date",
+      },
+    ]
+  }
+  Data={
+    Array [
+      Object {
+        "documentClass": "document 1",
+      },
+      Object {
+        "documentClass": "document 2",
+      },
+    ]
+  }
+  DeleteUrl="/api/DocumentClass/DeleteDocumentClass?classId="
+  TableTitle="Brows Document Classes"
+  classes={
+    Object {
+      "select": "withI18nextTranslation(DisplayTable)-select-1",
+    }
+  }
+  loading={true}
+/>
+`;

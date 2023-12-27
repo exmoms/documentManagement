@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table View matches snapshot 1`] = `
+<WithStyles(ForwardRef(Paper))
+  className="makeStyles-root-1"
+>
+  <WithStyles(ForwardRef(TableContainer))
+    className="makeStyles-container-2"
+  >
+    <WithStyles(ForwardRef(Table))
+      aria-label="sticky table"
+      stickyHeader={true}
+    >
+      <WithStyles(ForwardRef(TableHead))>
+        <WithStyles(ForwardRef(TableRow))>
+          <WithStyles(ForwardRef(TableCell))>
+            #
+          </WithStyles(ForwardRef(TableCell))>
+          <WithStyles(ForwardRef(TableCell))
+            key="AggregateName"
+            style={
+              Object {
+                "minWidth": 170,
+              }
+            }
+          >
+            Aggregation Name
+          </WithStyles(ForwardRef(TableCell))>
+          <WithStyles(ForwardRef(TableCell))
+            key="metaDataModelName"
+            style={
+              Object {
+                "minWidth": 100,
+              }
+            }
+          >
+            Aggregated Model
+          </WithStyles(ForwardRef(TableCell))>
+        </WithStyles(ForwardRef(TableRow))>
+      </WithStyles(ForwardRef(TableHead))>
+      <WithStyles(ForwardRef(TableBody))>
+        <WithStyles(ForwardRef(TableRow))
+          hover={true}
+          key="0"
+          role="checkbox"
+          tabIndex={-1}
+        >
+          <WithStyles(ForwardRef(TableCell))>
+            1
+          </WithStyles(ForwardRef(TableCell))>
+          <WithStyles(ForwardRef(TableCell))
+            key="AggregateName"
+          >
+             Aggregated Name 1
+          </WithStyles(ForwardRef(TableCell))>
+          <WithStyles(ForwardRef(TableCell))
+            key="metaDataModelName"
+          >
+            Meta Data Model test 1
+          </WithStyles(ForwardRef(TableCell))>
+        </WithStyles(ForwardRef(TableRow))>
+        <WithStyles(ForwardRef(TableRow))
+          hover={true}
+          key="1"
+          role="checkbox"
+          tabIndex={-1}
+        >
+          <WithStyles(ForwardRef(TableCell))>
+            2
+          </WithStyles(ForwardRef(TableCell))>
+          <WithStyles(ForwardRef(TableCell))
+            key="AggregateName"
+          >
+             Aggregated Name 2
+          </WithStyles(ForwardRef(TableCell))>
+          <WithStyles(ForwardRef(TableCell))
+            key="metaDataModelName"
+          >
+            Meta Data Model test 2
+          </WithStyles(ForwardRef(TableCell))>
+        </WithStyles(ForwardRef(TableRow))>
+      </WithStyles(ForwardRef(TableBody))>
+    </WithStyles(ForwardRef(Table))>
+  </WithStyles(ForwardRef(TableContainer))>
+  <WithStyles(ForwardRef(TablePagination))
+    component="div"
+    count={2}
+    onChangePage={[Function]}
+    onChangeRowsPerPage={[Function]}
+    page={0}
+    rowsPerPage={10}
+    rowsPerPageOptions={
+      Array [
+        5,
+        10,
+        15,
+      ]
+    }
+  />
+</WithStyles(ForwardRef(Paper))>
+`;

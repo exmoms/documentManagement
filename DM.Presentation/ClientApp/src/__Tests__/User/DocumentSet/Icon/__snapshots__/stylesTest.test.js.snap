@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`styles styles matches snapshot 1`] = `"<div class=\\"sc-AxheI kEOPNl\\"></div>"`;
+
+exports[`styles styles matches snapshot 2`] = `"<div class=\\"sc-Axmtr ilxBVU\\"></div>"`;
+
+exports[`styles styles matches snapshot 3`] = `"<img class=\\"sc-AxmLO cAKCgh\\">"`;
+
+exports[`styles styles matches snapshot 4`] = `"<div class=\\"sc-fzozJi jxgYyc\\"></div>"`;

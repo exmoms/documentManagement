@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AggregatedMetaDataModelForm AggregatedMetaDataModelForm matches snapshot 1`] = `
+<div>
+  <div>
+    <div
+      className="MuiPaper-root MuiTableContainer-root MuiPaper-elevation1 MuiPaper-rounded"
+    >
+      <table
+        aria-label="simple table"
+        className="MuiTable-root withI18nextTranslation(AggregatedMetaDataModelForm)-table-6"
+      >
+        <thead
+          className="MuiTableHead-root"
+        >
+          <tr
+            className="MuiTableRow-root MuiTableRow-head"
+          >
+            <th
+              aria-sort={null}
+              className="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              namelabel
+               
+            </th>
+            <th
+              aria-sort={null}
+              className="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              actions
+               
+            </th>
+            <th
+              aria-sort={null}
+              className="MuiTableCell-root MuiTableCell-head"
+              scope="col"
+            >
+              selecteddocumentname
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          className="MuiTableBody-root"
+        >
+          <tr
+            className="MuiTableRow-root"
+          >
+            <td
+              aria-sort={null}
+              className="MuiTableCell-root MuiTableCell-body"
+            >
+              doc1
+            </td>
+            <td
+              aria-sort={null}
+              className="MuiTableCell-root MuiTableCell-body"
+            >
+              <button
+                className="MuiButtonBase-root MuiButton-root MuiButton-outlined withI18nextTranslation(AggregatedMetaDataModelForm)-buttonTable-11 MuiButton-outlinedPrimary MuiButton-outlinedSizeSmall MuiButton-sizeSmall"
+                disabled={false}
+                id="addAggregated1"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={0}
+                type="button"
+              >
+                <span
+                  className="MuiButton-label"
+                >
+                  addaggregateddoc
+                </span>
+              </button>
+            </td>
+            <td
+              aria-sort={null}
+              className="MuiTableCell-root MuiTableCell-body"
+              id="table-cell-aggregated-doc1"
+            >
+              doc2
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div />
+  </div>
+</div>
+`;

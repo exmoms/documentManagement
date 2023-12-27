@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditProfilePopup matches snapshot 1`] = `
+<withI18nextTranslation(EditRolePopup)
+  action={[MockFunction]}
+  classes={
+    Object {
+      "margin": "withI18nextTranslation(EditRolePopup)-margin-2",
+      "paper": "withI18nextTranslation(EditRolePopup)-paper-1",
+    }
+  }
+  show={true}
+  user={
+    Object {
+      "roles": Array [
+        "Admin",
+      ],
+      "userId": 1,
+      "userName": "userName A",
+    }
+  }
+/>
+`;
